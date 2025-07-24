@@ -40,18 +40,7 @@ npm install
 node index.js
 ⚠️ Make sure MongoDB is running locally or configure the MongoDB Atlas URI in your .env file.
 
-📁 Folder Structure
-csharp
-Copy
-Edit
-hostels-booking-app/
-├── client/        # React Frontend
-│   ├── public/
-│   └── src/
-├── server/        # Node.js Backend
-│   └── routes/
-│   └── models/
-└── README.md
+
 
 
 💡 Future Scope
