@@ -1,0 +1,168 @@
+/* Container for the whole component */
+.login-signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* background: linear-gradient(135deg, #ff7e5f, #feb47b); */
+}
+
+/* Common form container */
+.login-form-container, .signup-form-container {
+  width: 100%;
+  max-width: 450px;
+  background-color: #fff;
+  /* border-color: red; */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+  transform: translateY(0);
+  animation: slide-up 0.5s ease-out;
+}
+
+/* Animations for form container */
+@keyframes slide-up {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Title */
+.login-title, .signup-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Form group */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #34495e;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  border: 2px solid #e6e6e6;
+  border-radius: 6px;
+  background-color: #f8f8f8;
+}
+
+.input-group .input-icon {
+  padding: 10px;
+  color: #34495e;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: transparent;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.form-input:focus {
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
+}
+
+/* Forgot password link */
+.forgot-password-link {
+  font-size: 14px;
+  color: #e74c3c;
+  text-decoration: none;
+}
+
+.forgot-password-link:hover {
+  text-decoration: underline;
+}
+
+/* Submit button */
+.submit-button {
+  width: 150px;
+  margin-left: 30%;
+  padding: 14px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #3498db;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+}
+
+/* Button Hover Animations */
+.submit-button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(52, 152, 219, 0.5);
+}
+
+.submit-button:active {
+  background-color: #1d6fa5;
+  transform: scale(1);
+}
+
+.submit-button:disabled {
+  background-color: #b0d4ff;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Form footer */
+.form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.switch-form-text {
+  text-align: center;
+  font-size: 14px;
+  color: #7f8c8d;
+  font-family: 'Poppins', sans-serif;
+}
+
+.switch-form-link {
+  color: #3498db;
+  cursor: pointer;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.switch-form-link:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+/* Add some animation for switching forms */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Add animation for the entire form container on transition */
+.login-form-container, .signup-form-container {
+  animation: fadeIn 0.8s ease-out;
+}

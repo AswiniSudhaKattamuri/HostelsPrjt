@@ -1,0 +1,194 @@
+/* General styling */
+.hostel-record-form {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 20px auto;
+  max-width: 1200px;
+  padding: 20px;
+  background: linear-gradient(135deg, #f9f9f9, #e6e6e6);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+.hostel-record-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #007BFF;
+  margin-bottom: 30px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Layout */
+.hostel-record-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Ensures responsiveness */
+  gap: 20px;
+}
+
+.hostel-record-box {
+  flex: 1;
+  min-width: 300px; /* Ensures a good layout on smaller screens */
+  padding: 20px;
+  border: 2px solid #007BFF;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Fieldset and legend */
+.hostel-record-fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hostel-record-legend {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #007BFF;
+}
+
+/* Inputs and labels */
+.hostel-record-input,
+.hostel-record-select {
+  width: 90%; /* Changed input box length */
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.hostel-record-input:focus,
+.hostel-record-select:focus {
+  border-color: #007BFF;
+  outline: none;
+  background-color: #ffffff;
+}
+
+.hostel-record-label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: block;
+  font-weight: bold;
+}
+
+/* File input */
+.hostel-record-file-container {
+  position: relative;
+}
+
+.hostel-record-file-label {
+  display: block;
+  padding: 12px;
+  background-color: #007BFF;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.hostel-record-file-label:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.hostel-record-file-input {
+  display: none;
+}
+
+/* Sharing options */
+.hostel-record-sharing {
+  margin-top: 10px;
+}
+
+.hostel-record-checkbox-group {
+  display: flex; /* Align checkboxes side by side */
+  flex-wrap: wrap; /* Wrap checkboxes if they overflow */
+  gap: 15px; /* Add spacing between checkboxes */
+}
+
+.hostel-record-checkbox-group label {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.hostel-record-checkbox-group input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.hostel-record-checkbox-group input[type="checkbox"]:hover {
+  transform: scale(1.4); /* Slight zoom on hover */
+}
+
+/* Arrow animation */
+.arrow {
+  display: inline-block;
+  font-size: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.arrow:hover {
+  transform: scale(1.5); /* Zoom effect on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hostel-record-row {
+    flex-direction: column;
+  }
+
+  .hostel-record-box {
+    margin-bottom: 20px;
+  }
+}
+
+/* Buttons */
+.hostel-record-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.hostel-record-back-button,
+.hostel-record-submit-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.hostel-record-back-button {
+  background-color: rgb(240, 240, 240);
+}
+
+.hostel-record-back-button:hover {
+  background-color: rgb(49, 57, 251);
+  transform: scale(1.1);
+  color: white;
+}
+
+.hostel-record-submit-button {
+  background-color: rgb(240, 240, 240);
+}
+
+.hostel-record-submit-button:hover {
+  background-color: rgb(49, 57, 251);
+  color: white;
+  transform: scale(1.1);
+}

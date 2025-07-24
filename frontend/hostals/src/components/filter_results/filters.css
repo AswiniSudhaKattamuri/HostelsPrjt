@@ -1,0 +1,114 @@
+.filterresults {
+    position: relative;
+  display: flex;
+  background-color: transparent;
+  
+  height: fit-content;
+  justify-content: center;
+  /* z-index: -1; */
+  /* width: 100%; */
+  /* background-color: black; */
+  
+}
+.placecards{
+    display: inline-block;
+    position: relative;
+    /* background-color: red; */
+     /* Changed from inline-block to block */
+    height: fit-content;
+    margin-left: 5%;
+    top: 25px;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    /* background-color: rgb(20, 121, 210); */
+}
+.placecard{
+    position: relative;
+    display:inline-block;
+    flex-direction: column;
+    align-items: center;
+    height: 420px;
+    width: 300px;
+    border-radius: 5px;
+    /* background-color: blue; */
+    cursor: pointer;
+    margin: 12.5px;
+    z-index: 1;
+
+}
+.image{
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    /* margin: 10px; */
+}
+.place{
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    
+    font-style: normal;   
+}
+.title{
+   
+    font-weight: 700;
+    font-size: 20px;
+}
+.location{
+  margin: 0!important;
+  padding: 0!important;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: hsla(0, 0%, 13%, 0.682);
+  font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: hsla(0, 0%, 13%, 0.682);
+
+  
+}
+.info{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+    width: 95%;
+    height: 100px;
+    /* background-color: tomato; */
+    
+}
+.fas{
+    /* font-weight: 400; */
+    font-size: 13px;
+    /* line-height: 20px; */
+}
+.tags{
+  
+  font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: hsla(0, 0%, 13%, 0.682);
+  
+}
+.price{
+   /* position: obsolute; */
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: hsla(0, 0%, 13%, 0.682);
+  
+}
+.rating{
+    position: absolute;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: hsla(0, 0%, 13%, 0.682);
+    top: 6.5px;
+    right: -5px;
+}
+.line1{
+    display: flex;
+}
